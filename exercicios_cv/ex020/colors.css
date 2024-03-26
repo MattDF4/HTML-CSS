@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#style {
+    background-color:aliceblue;
+}
+
+#estructure {
+    background-color:aliceblue;
+}
+
+#title_estructure:hover {
+    color: orangered;
+}
+
+#title_style:hover {
+    color: blue;
+}
+
+/* Cor para a box -> */
+
+#style:hover {
+    background-color: lightblue;
+}
+
+#estructure:hover {
+    background-color: orange;
+}

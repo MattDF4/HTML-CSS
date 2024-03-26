@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pf-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens responsivas</title>
+</head>
+
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Veja a imagem a seguir em diferentes tamanhos de tele e mude o tamanho da tela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotoS.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/fotoM.png" type="image/png">
+        <img src="imagens/fotoB.png" alt="Imagem dinâmica">
+    </picture>
+
+    <h1>Tocando áudios</h1>
+    <p>Aprendendo a colocar áudios no site;</p>
+    <audio preload="metadata" controls> 
+        <source src="midia/better-day-186374.mp3" type="audio/mpeg">
+        <source src="midia/better-day-186374.ogg" type="audio/ogg">
+        <source src="midia/better-day-186374.wav" type="audio/wav">
+        <p>Seu navegador não é capaz de reproduzir o áudio.  Baixe o áudio aqui: <a href="midia/better-day-186374.mp3">Clique aqui</a></p>
+    </audio>
+
+</html>

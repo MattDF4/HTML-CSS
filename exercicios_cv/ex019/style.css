@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: rgb(240, 185, 126);
+}
+
+main {
+    margin: auto;
+    background-image: linear-gradient(to left ,rgb(235, 166, 110), rgb(188, 98, 98));
+    width: 600px;
+    padding: 1%;
+    border-radius: 5%;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h1#principal {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+h1#secundario {
+    color: orange;
+}
+
+h2 {
+    color: rgb(206, 141, 67);
+}
+
+p {
+    text-indent: 30px;
+}
+
+.basic {
+    color: chartreuse;
+}
+
+.intermed {
+    color: green;
+}
+
+.advanced {
+    color: rgb(23, 73, 23);
+}

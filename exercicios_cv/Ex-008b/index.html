@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações:</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Explorando outras formatações: </h1>
+    <h2>Código fonte</h2>
+    <p>
+        O comando <code>documento.getElementById</code> ('teste').<br>
+        Utilizando a Tag &lt;code&gt; para deixar o tamanho de cada letra igual.
+    </p>
+    <h2>
+        Inserindo Códigos no texto
+    </h2>
+    <p>
+        Quando for inserir códigos de alguma linguagem de programação no texto, utilizar as Tgas &lt;code&gt; e &lt;pre&gt;. A tag 'Code' irá padronizar o tamanho de cada letra ou número digitado, e tudo deve estar dentro da Tag 'Pre', para que ela faça a identação corretamente, segue o exemplo:
+    </p>
+
+    <h3>Utilizando as duas Tags:</h3>
+    <pre>
+        <code>
+    num = int(input('Insira um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR.')
+    else:
+        print(f'O número {num} é ÍMPAR.')
+    print('FIM DO PROGRAMA.')
+        </code>
+    </pre>
+
+    <h3>Utilizadno apenas a Tag 'Code':</h3>
+    <code>
+        num = int(input('Insira um número: '))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR.')
+        else:
+            print(f'O número {num} é ÍMPAR.')
+        print('FIM DO PROGRAMA.')
+    </code>
+
+    <h2>
+        Citações: 
+    </h2>
+    <p>
+        Segundo Aristótales, aluno de Sócrates; 
+    </p>
+
+    <blockquote>
+        <q>
+            O menor desvio inicial da verdade multiplica-se ao infinito <br>
+            na medida em que avança.
+        </q>
+    </blockquote>
+
+    <p>
+        Utilize a Tag &lt;q&gt; para colocar tudo <br>
+        entre aspas.
+    </p>
+
+    <h2>
+        Abreviações;
+    </h2>
+
+    <p>
+        Estamos estudando <abbr title="Hyper Text Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr>. <br>
+        Utilizadno a Tag &lt;abbr&gt;
+    </p>
+</body>
+
+</html>

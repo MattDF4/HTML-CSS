@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 1px 1px 1px purple;
+}
+
+h2 {
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: crimson;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(97, 48, 97), pink);
+}
+
+main {
+    box-shadow: 2px 2px 2px rgb(231, 67, 246);
+    margin: auto;
+    width: 400px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+}

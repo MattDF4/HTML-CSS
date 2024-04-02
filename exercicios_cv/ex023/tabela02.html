@@ -6,34 +6,42 @@
     <title>Tabelas</title>
 
     <style>
-
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        
+
         table {
             border-collapse: collapse;
         }
 
-        td { 
-            text-align: center;
-            vertical-align: middle;
+        caption {
+            background-color: rgb(181, 188, 196);
             padding: 5px;
-            width: 100px;
-            height: 50px;
+        }
+
+        td {
+            padding: 5px;
             border: 1px solid black;
+            
+        }
+
+        thead, tfoot {
+            border: 1px solid black;
+            background-color: grey;
         }
 
         th {
-            padding: 20px;
+            padding: 5px;
             border: 1px solid black;
-            background-color: grey;
-            color: white;
         }
 
-        tfoot {
-            background-color: grey;
-            color: white;
+        .pop {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
     </style>
@@ -43,6 +51,7 @@
 <!--  
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -53,51 +62,55 @@
  -->
 
 <body>
-    <table>
 
+    <h1>Utilizando Tabelas grandes</h1>
+    <table>
+        <caption>
+            <strong>População geral por estado no Brasil</strong>
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>44 411 238</td>
+                <td class="pop">44 411 238</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>20 538 718	</td>
+                <td class="pop">20 538 718	</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>16 054 524	</td>
+                <td class="pop">16 054 524	</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14 141 626</td>
+                <td class="pop">14 141 626</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td>11 444 380</td>
+                <td class="pop">11 444 380</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>10 882 965</td>
+                <td class="pop">10 882 965</td>
             </tr>
 
             <tr>
                 <td>Pernambuco</td>
-                <td>9 058 931</td>
+                <td class="pop">9 058 931</td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <td>Total de habitantes</td>
-                <td> 88888888</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="pop"><strong>88888888</strong></td>
             </tr>
         </tfoot>
 

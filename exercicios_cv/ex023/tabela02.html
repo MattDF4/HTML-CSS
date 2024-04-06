@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: rgb(181, 188, 196);
+            padding: 5px;
+        }
+
+        td {
+            padding: 5px;
+            border: 1px solid black;
+            
+        }
+
+        thead, tfoot {
+            border: 1px solid black;
+            background-color: grey;
+        }
+
+        th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .pop {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+    </style>
+
+</head>
+
+<!--  
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+
+ -->
+
+<body>
+
+    <h1>Utilizando Tabelas grandes</h1>
+    <table>
+        <caption>
+            <strong>População geral por estado no Brasil</strong>
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="pop">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="pop">20 538 718	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="pop">16 054 524	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="pop">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="pop">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="pop">10 882 965</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="pop">9 058 931</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="pop"><strong>88888888</strong></td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>

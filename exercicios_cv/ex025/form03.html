@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Preencha</h1>
+
+
+    <form action="infos.py" method="post" autocomplete="on">
+
+        <p>
+            <label for="iuser">Nome:</label>
+            <input type="text" name="user" id="iuser" required minlength="4" maxlength="15" placeholder="Nome Completo" size="10">
+        </p>
+
+        <p>
+            <label for="idia">Data da prova: </label>
+            <input type="date" name="dia" id="idia">
+        </p>
+
+        <p>
+            <label for="iperiodo">Período Letivo:</label>
+            <input type="month" name="periodo" id="iperiodo">
+        </p>
+
+        <P>
+            <label for="imedia">Média:</label> 
+            <input type="number" name="media" id="imedia" min="0" max="10" step="0.1">
+        </P>
+
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="LIMPAR">
+        
+
+    </form>
+
+
+</body>
+</html>

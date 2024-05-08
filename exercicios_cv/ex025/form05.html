@@ -33,8 +33,27 @@
             </p>
             <p>
                 <label for="inumero">Número: </label>
-                <input type="tel" name="numero" id="inumero" required autocomplete="tel" placeholder="(DDD) XXXX-XXXX">
+                <input type="tel" name="numero" id="inumero" required autocomplete="tel" placeholder="(DDD) XXXX-XXXX" pattern="\(\d{2})\d{4, 5}-\d{4}$">
             </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Esportes
+            </legend>
+
+            <input type="checkbox" name="e-bas" id="ie-bas"> <label for="ie-bas">Basquete</label> <br>
+            <input type="checkbox" name="e-fut" id="ie-fut"> <label for="ie-fut">Futebol</label> <br>
+            <input type="checkbox" name="e-vol" id="ie-vol"> <label for="ie-vol">Volei</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Escolha
+            </legend>
+
+            <input type="radio" name="idade" id="imais_18"> <label for="imais_18">+18</label> <br>
+            <input type="radio" name="idade" id="imenos_18"> <label for="imenos_18">-18</label>
         </fieldset>
 
         <input type="submit" value="Enviar">

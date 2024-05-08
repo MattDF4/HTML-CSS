@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizando inputs de Cor, range e file</h1>
+
+
+    <form action="docs.php" method="post">
+
+        <fieldset>
+            <legend>
+                Novos testes com inputs
+            </legend>
+            <label for="id_cores">Cor:</label>
+            <input type="color" name="cores" id="id_cores"><br> <br>
+        
+            <label for="id_alcance">Range:</label>
+            <input type="range" name="alcance" id="id_alcance" min="1" max="5"><br> <br>
+        
+            <label for="id_arq">Arquivo: </label>
+            <input type="file" name="arq" id="id_arq">
+        </fieldset>
+
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preencha o Formulário</h1>
+
+    <form action="dados.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>
+                DADOS CADASTRAIS
+            </legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo">
+            </p>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail"required autocomplete="email" placeholder="E-mail Pessoal">
+            </p>
+            <p>
+                <label for="inumero">Número: </label>
+                <input type="tel" name="numero" id="inumero" required autocomplete="tel" placeholder="(DDD) XXXX-XXXX">
+            </p>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+</html>

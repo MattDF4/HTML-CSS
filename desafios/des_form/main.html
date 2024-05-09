@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+
+    <div>
+        <h1>Cadastro de DEV'S</h1>
+        <p>Complete suas informações</p>
+    </div>
+
+    <form action="doc.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="id_nome">Nome:</label>
+            <input type="text" name="nome" id="id_nome" required autocomplete="name">
+        
+            <label for="id_sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="id_sobrenome" required autocomplete="family-name">
+        </p>
+
+        <p>
+            <label for="id_email">E-mail:</label>
+            <input type="email" name="email" id="id_email" required autocomplete="email">
+        </p>
+
+        <p>
+            <bolder>De qual lado você desenvolve?</bolder> <br>
+
+            <label for="id_front_ops">Front-End</label>
+            <input type="radio" name="dev_web" id="id_front_ops" value="frontend" checked><br> 
+
+            <label for="id_back_ops">Back-end</label>
+            <input type="radio" name="dev_web" id="id_back_ops" value="backend"><br>
+
+            <label for="id_full_ops">Full-Stack</label>
+            <input type="radio" name="dev_web" id="id_full_ops" value="fullstack">
+            
+        </p>
+
+    </form>
+
+</body>
+</html>

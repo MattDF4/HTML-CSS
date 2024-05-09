@@ -22,13 +22,16 @@
 
             <p>
                 <label for="id_n1">Número 1:</label>
-                <input type="number" name="n1" id="id_n1" required step="0.5" placeholder="0.0"><br><br>
+                <input type="number" name="n1" id="id_n1" required step="0.5" placeholder="0.0" 
+                oninput="id_result.innerHTML = Number(id_n1.value) + Number(id_n2.value)"><br><br>
+                
             </p>
 
 
             <p>
                 <label for="id_n2">Número 2:</label>
-                <input type="number" name="n2" id="id_n2" required step="0.5" placeholder="0.0">
+                <input type="number" name="n2" id="id_n2" required step="0.5" placeholder="0.0"
+                oninput="id_result.innerHTML = Number(id_n1.value) + Number(id_n2.value)">
             </p>
 
             <p>

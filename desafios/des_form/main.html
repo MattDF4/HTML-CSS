@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="estilo/padrão.css">
 </head>
 <body>
 
 
     <div>
         <h1>Cadastro de DEV'S</h1>
-        <p>Complete suas informações</p>
+        <div class="perguntas"><strong>Complete suas informações</strong></div>
     </div>
 
     <form action="doc.php" method="post" autocomplete="on">
-
-        <p>
-            <label for="id_nome">Nome:</label>
-            <input type="text" name="nome" id="id_nome" required autocomplete="name">
         
-            <label for="id_sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="id_sobrenome" required autocomplete="family-name">
-        </p>
+        <fieldset>
+            <p>
+                <label for="id_nome">Nome:</label>
+                <input type="text" name="nome" id="id_nome" required autocomplete="name">
+            
+                <label for="id_sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="id_sobrenome" required autocomplete="family-name">
+            </p>
+        
 
         <p>
             <label for="id_email">E-mail:</label>
             <input type="email" name="email" id="id_email" required autocomplete="email">
         </p>
+        </fieldset>
+
 
         <p>
-            <bolder>De qual lado você desenvolve?</bolder> <br>
+            <div class="perguntas"><strong>De qual lado você desenvolve?</strong></div><br>
 
             <label for="id_front_ops">Front-End</label>
             <input type="radio" name="dev_web" id="id_front_ops" value="frontend" checked><br> 
@@ -40,6 +45,42 @@
             <label for="id_full_ops">Full-Stack</label>
             <input type="radio" name="dev_web" id="id_full_ops" value="fullstack">
             
+        </p>
+
+        <p>
+
+            <label for="id_senioridade">Senioridade:</label>
+            <select name="cargo" id="id_senioridade"> 
+
+                <option>--- Escolha ---</option>
+                <optgroup> 
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Sênior</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <fieldset>
+            <p>
+                <div class="perguntas"><strong>Quais tecnologias você utiliza?</strong></div><br>
+                <label for="id_html_css">HTML5/CSS3</label>
+                <input type="checkbox" id="id_html_css">
+                <label for="id_python">Python</label>
+                <input type="checkbox" id="id_python">
+                <label for="id_javascript">JavaScript</label>
+                <input type="checkbox" id="id_javascript">
+                <label for="id_java">Java</label>
+                <input type="checkbox" id="id_java">
+                <label for="id_mysql0">MySql</label>
+                <input type="checkbox" id="id_mysql">
+            </p>
+        </fieldset>
+
+        <p>
+            <strong>Fale mais das suas experiências:</strong> <br>
+            <textarea name="experiencia" id="id_experiencia" cols="45" rows="10"></textarea>
         </p>
 
     </form>

@@ -7,88 +7,96 @@
     <link rel="stylesheet" href="estilo/padrão.css">
 </head>
 <body>
+        <main>
+            <div>
+                <h1>Cadastro de DEV'S</h1>
+                <div class="perguntas"><strong>Complete suas informações</strong></div>
+            </div>
 
+            <form action="doc.php" method="post" autocomplete="on">
+                
+                <header>
+                    <fieldset>
+                        <p>
+                            <label for="id_nome">Nome:</label>
+                            <input type="text" name="nome" id="id_nome" required autocomplete="name">
+                    
+                            <label for="id_sobrenome">Sobrenome:</label>
+                            <input type="text" name="sobrenome" id="id_sobrenome" required autocomplete="family-name">
+                        </p>
+                    
+                    <p>
+                        <label for="id_email">E-mail:</label>
+                        <input type="email" name="email" id="id_email" required autocomplete="email">
+                    </p>
+                    </fieldset>
+                </header>
 
-    <div>
-        <h1>Cadastro de DEV'S</h1>
-        <div class="perguntas"><strong>Complete suas informações</strong></div>
-    </div>
-
-    <form action="doc.php" method="post" autocomplete="on">
-        
-        <fieldset class="grupo">
-            <p>
-                <label for="id_nome">Nome:</label>
-                <input type="text" name="nome" id="id_nome" required autocomplete="name">
-            
-                <label for="id_sobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="id_sobrenome" required autocomplete="family-name">
-            </p>
-        
-
-        <p>
-            <label for="id_email">E-mail:</label>
-            <input type="email" name="email" id="id_email" required autocomplete="email">
-        </p>
-        </fieldset>
-
-
-        <div class="campo">
-            <div class="perguntas"><strong>De qual lado você desenvolve?</strong></div><br>
-
-            <label for="id_front_ops">Front-End</label>
-            <input type="radio" name="dev_web" id="id_front_ops" value="frontend" checked><br> 
-
-            <label for="id_back_ops">Back-end</label>
-            <input type="radio" name="dev_web" id="id_back_ops" value="backend"><br>
-
-            <label for="id_full_ops">Full-Stack</label>
-            <input type="radio" name="dev_web" id="id_full_ops" value="fullstack">
-            
-        </div>
 
         
+            <section id="lado_dev">
+                <p>
+                    <div class="perguntas"><strong>De qual lado você desenvolve?</strong></div><br>
+                    <label for="id_front_ops">Front-End</label>
+                    <input type="radio" name="dev_web" id="id_front_ops" value="frontend" checked><br>
+                    <label for="id_back_ops">Back-end</label>
+                    <input type="radio" name="dev_web" id="id_back_ops" value="backend"><br>
+                    <label for="id_full_ops">Full-Stack</label>
+                    <input type="radio" name="dev_web" id="id_full_ops" value="fullstack">
+                
+                </p>
+            </section>
 
-        <div class="campo">
-            <label for="id_senioridade">Senioridade:</label>
-            <select name="cargo" id="id_senioridade">
-                <option>--- Escolha ---</option>
-                <optgroup>
-                    <option>Junior</option>
-                    <option>Pleno</option>
-                    <option>Sênior</option>
-                </optgroup>
-            </select>
-        </div>
+            <section id="senrioridade">
+                <p>
+                    <label for="id_senioridade">Senioridade:</label>
+                    <select name="cargo" id="id_senioridade">
+                        <option>--- Escolha ---</option>
+                        <optgroup>
+                            <option>Junior</option>
+                            <option>Pleno</option>
+                            <option>Sênior</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </section>
+
+            <section id="tecnologias">
+                <fieldset>
+                    <p>
+                        <div class="perguntas"><strong>Quais tecnologias você utiliza?</strong></div><br>
+                        <label for="id_html_css">HTML5/CSS3</label>
+                        <input type="checkbox" id="id_html_css">
+                        <label for="id_python">Python</label>
+                        <input type="checkbox" id="id_python">
+                        <label for="id_javascript">JavaScript</label>
+                        <input type="checkbox" id="id_javascript">
+                        <label for="id_java">Java</label>
+                        <input type="checkbox" id="id_java">
+                        <label for="id_mysql0">MySql</label>
+                        <input type="checkbox" id="id_mysql">
+                    </p>
+                </fieldset>
+            </section>
+
+            <section id="experiencia">
+                <p>
+                    <div class="perguntas"><strong>Fale mais das suas experiências:</strong></div> <br>
+                    <textarea name="experiencia" id="id_experiencia" cols="45" rows="10"></textarea>
+                </p>
+            </section>
+
+            <footer>
+                <p>
+                    <input type="submit" value="Concluir">
+                    <input type="reset" value="Limpar">
+                </p>
+            </footer>
+
+        </main>
+
 
         
-
-        <fieldset class="grupo">
-            <p>
-                <div class="perguntas"><strong>Quais tecnologias você utiliza?</strong></div><br>
-                <label for="id_html_css">HTML5/CSS3</label>
-                <input type="checkbox" id="id_html_css">
-                <label for="id_python">Python</label>
-                <input type="checkbox" id="id_python">
-                <label for="id_javascript">JavaScript</label>
-                <input type="checkbox" id="id_javascript">
-                <label for="id_java">Java</label>
-                <input type="checkbox" id="id_java">
-                <label for="id_mysql0">MySql</label>
-                <input type="checkbox" id="id_mysql">
-            </p>
-        </fieldset>
-
-        <p>
-            <strong>Fale mais das suas experiências:</strong> <br>
-            <textarea name="experiencia" id="id_experiencia" cols="45" rows="10"></textarea>
-        </p>
-
-
-        <p>
-            <input type="submit" value="Concluir">
-            <input type="reset" value="Limpar">
-        </p>
     </form>
 
 </body>

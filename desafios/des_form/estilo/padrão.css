@@ -1,10 +1,42 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
+    
+    text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*-------------------------------------------------*/
+
+main {
+    margin: auto;
+    width: 500px;
+    border: 1px solid navy;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+
+fieldset {
+    border: 0;
+}
+
+
 textarea {
     resize: none;
+}
+
+/*-------------------------------------------------*/
+
+.perguntas {
+    color: darkblue;
 }
 

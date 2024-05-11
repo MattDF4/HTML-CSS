@@ -16,7 +16,7 @@
 
     <form action="doc.php" method="post" autocomplete="on">
         
-        <fieldset>
+        <fieldset class="grupo">
             <p>
                 <label for="id_nome">Nome:</label>
                 <input type="text" name="nome" id="id_nome" required autocomplete="name">
@@ -33,7 +33,7 @@
         </fieldset>
 
 
-        <p>
+        <div class="campo">
             <div class="perguntas"><strong>De qual lado você desenvolve?</strong></div><br>
 
             <label for="id_front_ops">Front-End</label>
@@ -45,24 +45,25 @@
             <label for="id_full_ops">Full-Stack</label>
             <input type="radio" name="dev_web" id="id_full_ops" value="fullstack">
             
-        </p>
+        </div>
 
-        <p>
+        
 
+        <div class="campo">
             <label for="id_senioridade">Senioridade:</label>
-            <select name="cargo" id="id_senioridade"> 
-
+            <select name="cargo" id="id_senioridade">
                 <option>--- Escolha ---</option>
-                <optgroup> 
+                <optgroup>
                     <option>Junior</option>
                     <option>Pleno</option>
                     <option>Sênior</option>
                 </optgroup>
-
             </select>
-        </p>
+        </div>
 
-        <fieldset>
+        
+
+        <fieldset class="grupo">
             <p>
                 <div class="perguntas"><strong>Quais tecnologias você utiliza?</strong></div><br>
                 <label for="id_html_css">HTML5/CSS3</label>

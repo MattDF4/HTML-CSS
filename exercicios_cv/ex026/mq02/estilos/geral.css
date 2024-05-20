@@ -39,5 +39,26 @@ main > h1 {
 }
 
 img {
+    display: block;
     margin: auto;
+}
+
+#Impressora {
+    display: none;
+} 
+
+#Celular {
+    display: block;
+}
+
+#Tablet {
+    display: none;
+}
+
+#Desktop {
+    display: none;
+}
+
+#Tv {
+    display: none;
 }

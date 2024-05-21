@@ -43,22 +43,10 @@ img {
     margin: auto;
 }
 
-#Impressora {
-    display: none;
-} 
-
 #Celular {
     display: block;
 }
 
-#Tablet {
-    display: none;
-}
-
-#Desktop {
-    display: none;
-}
-
-#Tv {
+#Tv, #Impressora, #Desktop, #Tablet {
     display: none;
 }
